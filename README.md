@@ -3,3 +3,5 @@
 
 
 Changing the file format from .sh to .command makes the app executable natively from mac, instead of needing to execute it via the CLI.
+
+Dependencies: gulag-cleaner (and its dependencies) and zenity
