@@ -9,7 +9,7 @@ select opt in "${options[@]}"
 do
     case $opt in
         "Escanear carpeta Descargas")
-            find /Users/username/Downloads/ -name "wuolah-free-*.pdf" -print0 | while read -d $'\0' file
+            find /Users/username/Downloads/ -name "free-*.pdf" -print0 | while read -d $'\0' file
                 do
                     gulagcleaner "$file"
                 done
@@ -37,7 +37,7 @@ do
                     --width=100 \
                     --text="Selecciona un directorio:" \
                     --directory)
-            find $DIR -name "wuolah-free-*.pdf" -print0 | while read -d $'\0' file
+            find $DIR -name "free-*.pdf" -print0 | while read -d $'\0' file
                 do
                     gulagcleaner "$file"
                 done
